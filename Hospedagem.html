@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<html>
+    <title>Hospedagem</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        <style>
+            /* Parte Superior do Site */
+            .logo{
+                border: solid 2px aquamarine;
+                background-color: aquamarine;
+                border-radius: 1.1rem;
+                margin: 15px 15px 15px 15px;
+                padding-left: 0rem;                
+            }
+
+            .topo{
+                border: solid 2px  aquamarine;
+                background-color: aquamarine;
+                border-radius: 1.1rem;
+                margin: 15px 500px 15px 130px;
+                padding: 15px 15px 15px 15px; 
+                display: block;               
+            }
+
+            .pic_principal{
+                width: 360px;
+                position: absolute;
+                margin-left: 350px;
+                margin-top: -235px;
+                display: block;
+            }
+
+            .saiba_mais{
+                border:none;
+                padding: 20px;
+                margin: 10px;
+                font-size: 24px;
+                border-radius: 10rem;
+                position: relative;
+                box-sizing: border-box;
+                cursor: pointer;                                
+            }
+
+            .saiba_mais button:hover{
+                background-color: antiquewhite;
+            }
+
+            /* Fim da Parte Superior do Site */
+
+            /* Parte do Meio do Site */
+
+            .cafe_meio{
+                position: absolute;
+                margin-left: 100px;
+            }
+
+            .local_meio{
+                position: absolute;
+                margin-left: 500px;
+                margin-top: 10px;               
+            }
+
+            .quartos{
+                border: solid 2px aquamarine;
+                background-color: aquamarine;
+                margin: 200px 15px 15px 15px;
+                padding: 55px 15px 15px 15px; 
+                border-radius: 1.1rem;                
+                display: flex;
+            }
+
+            .suite{
+                display: inline-block;
+                margin-right: 10px;
+                width: 700px;
+            }
+
+            .h3{
+                position: absolute;
+                margin-left: 350px;
+                margin-top: -50px;
+            }
+
+            /*Fim da Parte do Meio do Site */
+
+            /* Parte Inferior do Site */
+
+            .inferior{
+                border: solid 2px aquamarine;
+                background-color: aquamarine;
+                margin: 15px 15px 15px 15px;
+                padding: 15px 15px 15px 15px; 
+                border-radius: 1.1rem;
+                display: flex;              
+            }
+
+            .inf_dados{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 1rem 0;
+            }
+
+            .inf_cont{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.1rem;
+            }
+
+            form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            }
+
+            .enviar{
+                border:none;
+                padding: 20px;
+                margin: 10px;
+                font-size: 24px;
+                border-radius: 10rem;
+                position: relative;
+                box-sizing: border-box;
+                cursor: pointer;                                
+            }
+
+            .enviar button:hover{
+                background-color: antiquewhite;
+            }                       
+
+
+            /*Fim da Parte Inferior do Site */
+
+            body{
+                background-color: aqua;
+            }
+
+            *{
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             }
+
+         @media screen and (max-width: 600px) {
+            /* Parte Superior do Site */
+
+            .logo{
+                border: solid 2px aquamarine;
+                background-color: aquamarine;
+                border-radius: 1.1rem;
+                margin: 15px -90px 15px 15px;
+                padding-left: 0.9rem;
+            }
+
+            .topo{
+                border: solid 2px  aquamarine;
+                background-color: aquamarine;
+                border-radius: 1.1rem;
+                margin: 15px 270px 15px 60px;
+                padding: 15px 15px 15px 15px;                
+            }
+
+            .pic_principal{
+                width: 400px;
+                position: absolute;
+                margin-left: 310px;
+                margin-top: -240px;
+            }
+
+            .enviar{
+                border:none;
+                padding: 20px;
+                margin: 10px;
+                font-size: 24px;
+                border-radius: 10rem;
+                position: relative;
+                box-sizing: border-box;
+                cursor: pointer;                                
+            }
+
+            .enviar button:hover{
+                background-color: antiquewhite;
+            }
+
+            /* Fim da Parte Superior do Site */
+
+            /* Parte do Meio do Site */
+
+            .cafe_meio{
+                position: absolute;
+                margin-left: 10px;
+            }
+
+            .local_meio{
+                position: absolute;
+                margin-left: 290px;
+                margin-top: 10px;               
+            }
+
+            .quartos{
+                border: solid 2px aquamarine;
+                background-color: aquamarine;
+                margin: 200px 15px 15px 15px;
+                padding: 55px 15px 15px 15px; 
+                border-radius: 1.1rem;                
+                display: flex;
+            }
+
+            .suite{
+                display: inline-block;
+                margin-right: 10px;
+                width: 700px;
+            }
+
+            .h3{
+                position: absolute;
+                margin-left: 175px;
+                margin-top: -50px;
+            }
+
+            /*Fim da Parte do Meio do Site */
+
+            /* Parte Inferior do Site */
+
+            .inferior{
+                border: solid 2px aquamarine;
+                background-color: aquamarine;
+                margin: 15px 15px 15px 15px;
+                padding: 15px 15px 15px 15px; 
+                border-radius: 1.1rem;
+                display: flex;              
+            }
+
+            .inf_dados{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 1rem 0;
+            }
+
+            .inf_cont{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.1rem;
+            }
+
+            form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            }
+
+            .enviar{
+                border:none;
+                padding: 20px;
+                margin: 10px;
+                font-size: 24px;
+                border-radius: 10rem;
+                position: relative;
+                box-sizing: border-box;
+                cursor: pointer;                                
+            }
+
+            .enviar button:hover{
+                background-color: antiquewhite;
+            }                       
+
+
+            /*Fim da Parte Inferior do Site */
+            
+         }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!--Parte Superior do Site-->
+
+        <header class="logo">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+            <h3>Logo</h3>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+            <section class="topo">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                <h3>Sinta o conforto acolhedor de nossas Hospedagens</h3>
+                <p>Hospede-se nos nossos hotéis com quartos a partir de R$100,00</p>
+                <button type="submit" id="saiba_mais">Saiba Mais</button>
+
+                        </div>
+                    </div>
+                </div>        
+            </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <img src="pic_principal.png" alt="hosp_mar" class="pic_principal" style="max-width:100%; height:auto;">
+                </div>
+            </div>
+        </div>  
+
+        <!--Fim da Parte Superior-->
+
+        <!--Parte do Meio do Site-->
+        <section>
+
+           <h4 class="text-center">POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS?</h4> 
+
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+               <div class="cafe_meio">
+               <img src="cafe.png" alt="copo_cafe" class="cafe">
+                    <h4>Delicioso café da manhã</h4>
+                    <p>Incluso em todas as diárias</p>
+               </div>
+
+               <div class="local_meio">
+               <img src="localizacao.png" alt="local" class="localizacao">
+                    <h4>Fácil acesso</h4>
+                    <p>Perto dos principais pontos turísticos</p>
+               </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="quartos">
+
+            <h3 class="h3">Nossos Quartos</h3> 
+
+            <div class="suite">
+
+                <img src="suite_solteiro.png" alt="quarto_solteiro" style="max-width:100%; height:auto;">
+                <h4 class="text-center">Suíte Solteiro</h4>
+
+            </div>
+
+            <div class="suite">
+
+                <img src="suite_casal.png" alt="quarto_casal" style="max-width:100%; height:auto;">
+                <h4 class="text-center">Suíte Casal</h4>
+
+            </div>
+
+            <div class="suite">
+
+                <img src="suite_master.png" alt="quarto_master"  style="max-width:100%; height:auto;">
+                <h4 class="text-center">Suíte Master</h4>
+
+            </div>
+        </section>
+        <!--Fim do Meio do Site-->
+
+        <!--Parte Inferior do Site-->
+        <section class="inferior">
+
+            <form>
+            <div>
+
+                <h3 class="text-center">FAÇA SUA RESERVA</h3> 
+                <p>
+                    Entre em contato conosco informando as datas desejadas.
+                    Lhe retornaremos informando a disponibilidade e repassando
+                    detalhes da reserva.
+                </p>
+
+            </div>           
+<!--Atividade 5, conteúdo já inserido-->
+            <div class="inf_dados">
+                <form method="post" action="http://localhost:3000/reservas">
+
+                    <div class="inf_cont">    
+                        <label for="nome_hospede" class="form-label">Nome </label>
+                        <input type="text" name="nome_hospede" id="nome" required/>
+                    </div>
+
+                    <div class="inf_cont">
+                        <label for="data_de_entrada" class="form-label">Data de Entrada</label>
+                        <input type="text" name="data_de_entrada" id="data_ent" required/>
+                    </div>
+
+                    <div class="inf_cont">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" name="email" id="email" required/>
+                    </div>
+
+                    <div class="inf_cont">
+                        <label for="data_de_saida" class="form-label">Data de Saída</label>
+                        <input type="text" name="data_de_saida" id="data_sai" required/>
+                    </div>
+
+                    <div class="inf_cont">
+                        <label for="crianças" class="form-label">Crianças</label>
+                        <input type="text" name="crianças" id="crianças" required/>
+                    </div>
+
+                    <div class="inf_cont">
+                        <label for="adultos" class="form-label">Adultos</label>
+                        <input type="text" name="adultos" id="adultos" required/>
+                    </div>
+
+                    <div class="inf_cont">
+                        <label for="Observações" class="form-label">Observações </label>
+                        <textarea name="Observações" id="observaçoes" rows="5"> </textarea>
+                    </div>
+
+                    <div class="enviar">
+                        <button type="submit" >Enviar</button>
+                    </div>
+
+                    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <div id="result"></div>
+                    <script src="reservas.js"></script>
+
+                </form>
+                
+                
+            </div>
+            </form>
+
+        </section>
+
+            <!--Fim da Parte Inferior-->
+            
+    </body>
+</html>
